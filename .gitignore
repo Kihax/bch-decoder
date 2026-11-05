@@ -1,0 +1,11 @@
+*.log
+vivado_*
+Work/
+aiesimulator_output/
+*.csv
+*.json
+*.db
+.AIE_SIM_CMD_LINE_OPTIONS
+.Xil
+*.a
+pl_sample_counts
