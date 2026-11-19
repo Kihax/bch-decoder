@@ -17,7 +17,7 @@ public:
     bch_graph() {
         /* kernel */
         k_bch = kernel::create(bch_decode);
-        source(k_bch) = "basic/kernels.cc";
+        source(k_bch) = "vector/kernels.cc";
         runtime<ratio>(k_bch) = 0.9;   /* kernel lourd : une tuile pour lui seul */
 
         /* E/S PLIO 32 bits : 2 échantillons int16 par ligne des fichiers */

@@ -201,12 +201,12 @@ void bch_decode(adf::input_buffer<int32> & __restrict in,
      printf("bch decode : copy done");
 
     if (!compute_syndromes(in_t)) {
-        printf("bch decode : compute syndromes done");
+        printf("bch decode : compute syndromes done\n");
         int deg;
         key_equation_bm();
-        printf("bch decode : key equation done");
+        printf("bch decode : key equation done\n");
         int found = chien_search(&deg);
-        printf("bch decode : chien search done");
+        printf("bch decode : chien search done\n");
 
         if (found == 0) {
             nb_roots = 0;
